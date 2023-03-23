@@ -258,7 +258,7 @@ What will the above model be able to do ?
 How to join two models in django-rest-framework
 
 
-
+serializer
 class LevelSerializer(serializers.HyperlinkedModelSerializer):
     id = serializers.ReadOnlyField()
     class Meta:
@@ -277,7 +277,6 @@ views.py
 class ViewLevelProcessViewSet(viewsets.ModelViewSet):
     processes = LevelProcess.objects.all()
     serializer_class = LevelProcessSerializer(processes, many=True)
-
 
 aggregation and annotation
 
