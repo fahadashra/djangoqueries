@@ -272,7 +272,9 @@ class LevelProcessSerializer(serializers.ModelSerializer):
         model = LevelProcess
         fields = ('__all__')
 
+changes
 views.py
+
 
 class ViewLevelProcessViewSet(viewsets.ModelViewSet):
     processes = LevelProcess.objects.all()
